@@ -1,0 +1,25 @@
+{
+  "name": "scripts5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "koa2": "^2.0.0-alpha.7",
+    "muse-ui": "^3.0.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6"
+  }
+}

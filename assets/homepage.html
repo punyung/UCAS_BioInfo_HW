@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MilliQ Homework</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+
+
+<fieldset>
+    <legend><h3>Transcription Factors</h3></legend>
+
+    <ul>
+        <li><h3>Introduction</h3></li>
+        This website provides functional annotations and expression profiles of 2548 mouse and 2886 human transcription factors.
+        <li><h3>Query tools</h3></li>
+        <ul>
+            <li>Text Search.
+                <label for="symbol">基因名</label>
+                <input type="text" value="" name="symbol" class="symbol" placeholder="请输入基因名" />
+                <br><br>
+                <label for="species">物种</label>
+                <!--<input type="password" value="" name="pwd" class="pwd" placeholder="请输入密码" />-->
+                <select name="species" class="species">
+                    <option value=''>--select--
+                    <option value="mouse">mouse
+                    <option value="human">human
+                </select>
+                <br><br>
+                <button class="btn">提交</button>
+<!--
+                <form name="text" action="/query/Panrong" method="post">
+                    <table>
+                        <tr><td align=right><font color=red>*</font>Protein Name: </td><td><input type="text" name = 'name'></td></tr>
+                        <tr><td align=right><font color=red>*</font>Species: </td><td><select name="type">
+                            <option value=''>--select--
+                            <option>mouse
+                            <option>human
+                        </select></td></tr>
+                        <tr><td align=right><input type="submit" name = 'submitP' value='Submit'></td><td><input type="reset" /></td></tr>
+                    </table>
+                </form>
+-->
+            </li>
+            <!--
+            <li>Blast Search.
+            <form name="blast" action="#" method="post">
+            <table>
+            <tr><td align=right>Description: </td><td><textarea name="descr"></textarea></td></tr>
+            <tr><td align=right><input type="submit" name = 'submitP' value='Submit'></td><td><input type="reset" /></td></tr>
+            </table>
+            </form>
+            </li>
+            -->
+        </ul>
+        <li><h3>Query results</h3></li>
+        <!--<input id="txt"/>-->
+        <table border=1 width="950">
+                <tr>Gene Name:<input id="genename"></tr>
+                <tr>Gene ID:<input id="geneid"></tr>
+                <tr>Description:<input id="description"></tr>
+                <tr>Location:<input id="location"></tr>
+                <tr>Website:<input id="website"></tr>
+
+        </table>
+    </ul>
+</fieldset>
+</body>
+</html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('.btn').click(()=>{
+        $.ajax({
+            url: "http://localhost:5050/query/Panrong",
+            method: "POST",
+            data: {
+                symbol: $('.symbol').val(),
+                species: $('.species').val()
+            },
+            success(res){
+                console.log(res)
+                var u = document.getElementById("genename")
+                u.value = JSON.stringify(res.res.GeneName);
+                u.value = u.value.replace("\"","").replace("\"","");
+                var t = document.getElementById("geneid");
+                t.value = JSON.stringify(res.res.GeneID);
+                t.value = t.value.replace("\"","").replace("\"","");
+                var v = document.getElementById("description")
+                v.value = JSON.stringify(res.res.Description);
+                v.value = v.value.replace("\"","").replace("\"","");
+                var w = document.getElementById("location")
+                w.value = JSON.stringify(res.res.Location);
+                w.value = w.value.replace("\"","").replace("\"","");
+                var x = document.getElementById("website")
+                x.value = JSON.stringify(res.res.Website);
+                x.value = x.value.replace("\"","").replace("\"","");
+            },
+            error(err){
+                console.log(err)
+            }
+        })
+    })
+</script>
+
+
+</html>

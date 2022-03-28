@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MilliQ Homework</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+
+
+
+    <fieldset>
+        <legend>
+            <h3>Transcription Factors</h3>
+        </legend>
+
+        <ul>
+            <li>
+                <h3>Introduction</h3>
+            </li>
+            This website provides functional annotations and expression profiles of 2548 mouse and 2886 human
+            transcription factors.
+            <li>
+                <h3>Query tools</h3>
+            </li>
+            <ul>
+                <li>Text Search.
+                    <label for="symbol">基因名</label>
+                    <input type="text" value="" name="symbol" class="symbol" placeholder="请输入基因名" />
+                    <br><br>
+                    <label for="species">物种</label>
+                    <!--<input type="password" value="" name="pwd" class="pwd" placeholder="请输入密码" />-->
+                    <select name="species" class="species">
+                        <option value=''>--select--
+                        <option value="mouse">mouse
+                        <option value="human">human
+                    </select>
+                    <br><br>
+                    <button class="btn">提交</button>
+                    <!--
+                <form name="text" action="/query/Panrong" method="post">
+                    <table>
+                        <tr><td align=right><font color=red>*</font>Protein Name: </td><td><input type="text" name = 'name'></td></tr>
+                        <tr><td align=right><font color=red>*</font>Species: </td><td><select name="type">
+                            <option value=''>--select--
+                            <option>mouse
+                            <option>human
+                        </select></td></tr>
+                        <tr><td align=right><input type="submit" name = 'submitP' value='Submit'></td><td><input type="reset" /></td></tr>
+                    </table>
+                </form>
+-->
+                </li>
+                <!--
+            <li>Blast Search.
+            <form name="blast" action="#" method="post">
+            <table>
+            <tr><td align=right>Description: </td><td><textarea name="descr"></textarea></td></tr>
+            <tr><td align=right><input type="submit" name = 'submitP' value='Submit'></td><td><input type="reset" /></td></tr>
+            </table>
+            </form>
+            </li>
+            -->
+            </ul>
+            <li>
+                <h3>Query results</h3>
+            </li>
+
+        </ul>
+    </fieldset>
+    <div id="app">
+        GeneName: {{ res.GeneName }}<br />
+        GeneID: {{ res.GeneID }}<br />
+        Description: {{ res.Description }}<br />
+        Location: {{ res.Location }}<br />
+        Website: {{ res.Website }}<br />
+    </div>
+
+</body>
+
+</html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            res: {
+                Description: "",
+                GeneID: "",
+                GeneName: "",
+                Location: "",
+                Website: "",
+            }
+        }
+    })
+    $('.btn').click(() => {
+        $.ajax({
+            url: "http://localhost:5050/query/Panrong",
+            method: "POST",
+            data: {
+                symbol: $('.symbol').val(),
+                species: $('.species').val()
+            },
+            success(res) {
+                console.log(res)
+                app.$data.res = res.res;
+            },
+            error(err) {
+                console.log(err)
+            }
+        })
+        // var t = document.getElementById("txt");
+        // // t.value = JSON.stringify(res.res);
+        // var res = {
+        //     Description: "KLK3 upstream enhancer/promoter?region [Homo sapiens?(human)",
+        //     GeneID: "106128905",
+        //     GeneName: "LOC106128905",
+        //     Location: "Chromosome 19, NC_000019.10 (50849163..50854952)",
+        //     Nid: "1",
+        //     Website: "LOC106128905 KLK3 upstream enhancer/promoter region [Homo sapiens (human)] - Gene - NCBI (nih.gov)",
+        // }
+        // app.$data.res = res
+    })
+</script>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework of MilliQ</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+?>
+
+	<fieldset>
+	<legend><h3>Transcription Factors</h3></legend>
+    <!--
+        <fieldset></fieldset>:定义所含内容被包含在一个黑边框里。
+        <h3></h3>:定义所含内容格式为三级标题。
+        <legend></legend>:定义所含内容位于fieldset黑框之上。
+    -->
+	
+	<ul>
+	<li><h3>Introduction</h3></li>
+		This website provides functional annotations and expression profiles of 2548 mouse and 2886 human transcription factors.
+    <!--
+        <ul></ul>:定义所含内容可被<li></li>施加无序列表
+        <ol></ol>:定义所含内容可被<li></li>施加有序列表
+        <li></li>:定义所含内容的前面加上一个有序/无序列表
+    -->
+	<li><h3>Query tools</h3></li>
+		<ul>
+		<li>Text Search.
+		<form name="text" action="http://127.0.0.1:5050/query" method="get">
+		<table border="1">
+		<tr><td align=right><font color=red>*</font>Protein Name: </td><td><input type="text" name = 'query0'></td></tr>
+		<tr><td align=right><font color=red>*</font>Species: </td><td><select name="type">
+			<option value=''>--select--
+			<option value="mouse">mouse
+			<option value="human">human
+		</select></td></tr>
+		<tr><td align=right><input type="submit" name = 'submitP' value='Submit'></td><td><input type="reset" /></td></tr>
+		</table>
+		</form>
+		</li>
+		<!--
+			<form></form>:定义所含内容代表一个或多个表单
+			parameter:name,action,method..
+				name:定义表单名称·内容是任意text
+				action:定义表单将提交到的页面·内容是URL地址
+				method:定义用于发送表单数据的HTTP方法·内容是get或post
+					get:默认,将表单数据以名称/值对的形式附加到URL中:URL?name=value&name=value
+					post:以HTTP post的形式发送表单数据
+
+			<table></table>:定义所含内容将组成一个表格
+			parameter:border..
+				border:表格边框的宽度
+				
+			<tr></tr>:定义所含内容构成表格的一行,需被<th></th>或<td></td>进一步定义
+			<th></th>:接<tr></tr>,定义所含内容构成表格的一个表头格。有几对<th></th>就有几列
+			<td></td>:接<tr></tr>,定义所含内容构成表格的一个单元格。有几对<td></td>就有几列
+			parameter:align..
+				align:规定单元格内容的水平对齐方式·内容为left,right,center,justify或char
+
+			<font></font>:定义所含内容的文字格式
+			parameter:size,color,face.
+				size:文字大小·内容是代表大小的数字1,2等
+				color:文字颜色
+				face:文字字体
+			#font标签不被赞成使用,用样式来取代更好
+			
+			<input>:定义一个用于输入交互的表单项
+			value:表单上的默认文字
+			parameter:type,name..
+				name:定义输入的变量的名称·内容是任意text
+				type:定义输入的变量的类型,也因而规定了输入的方式(主要是单击和输入两种)·内容来自10个特定单词
+					button:定义可以点击的按钮(点我十连!)
+					checkbox:定义多选按钮
+					file:定义输入字段和"浏览"按钮,供文件上传
+					hidden:定义隐藏的输入字段
+					image:定义图像形式的提交按钮,本质还是个提交按钮
+					password:定义密码字段,该字段中的字符被掩盖
+					radio:定义单选按钮
+					reset:定义重置按钮,交互之后表单中的所有数据会被重置
+					submit:定义提交按钮,交互之后表单会被发送给服务器
+					text:定义单行输入字段,用户可以输入任意文本,默认20字符
+
+			<select></select>:定义所含内容构成一个用于选择交互的表单项,需被<option></option>进一步定义
+			parameter:name,size,...
+				name:定义所选变量的名称·内容是任意text
+				size:定义下拉选单能显示候选项的个数·内容是任意正整数
+			<option></option>:接<select></select>,定义所含内容构成其中一个选项
+			parameter:value
+				value:定义该选项所代表的向服务器发送的变量值,即name的值
+
+
+			
+		-->
+		</ul>
+	<li><h3>Query results</h3></li>
+	<table border=1>
+
+	<tr>
+		<th>Factor</th><th>Structural type</th><th>Recognition sequence</a></th><th>Binds as</th>
+	</tr>
+
+	<tr>
+		<th><a href="http://pir.georgetown.edu/cgi-bin/textsearch.pl?sitesearch=on&submit.x=0&submit.y=0&query0=c-Myc&field0=ALL&search=1" target=_blank>c-Myc</a></th>
+		<td>Basic helix-loop-helix</a></td>
+		<td>5'-CACGTG-3'</td><td>Dimer</td>
+	</tr>
+
+	</table>
+	</ul>
+	</fieldset>
+</body>
+</html>
