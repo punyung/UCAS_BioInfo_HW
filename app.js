@@ -3,7 +3,7 @@
 
 const Koa = require("koa2"); // Koa 为构造函数
 const app = new Koa(); //声明实例app
-const port = 5050; // 端口号
+const port = 8100; // 端口号
 const router = require('./router'); //因为是index文件，可以直接以文件夹名字进行默认
 //const db = require('./utils/db.js');
 const cors = require("koa2-cors"); // 允许后端跨域

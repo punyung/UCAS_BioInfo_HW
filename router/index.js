@@ -7,9 +7,15 @@ const home  =  require(`./home`);
 const login  =  require(`./login`);
 const query = require(`./query`);
 const fs = require("fs");
+const blastp = require(`./blastp`)
 
 //get相当于前端做的GET请求
 router.get('/query', async (ctx)=>{
+    ctx.set("Content-Type", "text/html");
+    ctx.body = fs.readFileSync(`./assets/homepage1.html`);// 直接访问homepage
+})
+
+router.get('/blastp', async (ctx)=>{
     ctx.set("Content-Type", "text/html");
     ctx.body = fs.readFileSync(`./assets/homepage1.html`);// 直接访问homepage
 })
@@ -26,9 +32,10 @@ router.use(`/list`,list.routes(),list.allowedMethods());
 router.use(`/home`,home.routes(),home.allowedMethods());
 router.use(`/login`,login.routes(),login.allowedMethods());
 router.use(`/query`,query.routes(),query.allowedMethods());
+router.use(`/blastp`,blastp.routes(),blastp.allowedMethods());
 
 // 如果前端还是访问了 http://localhost:5050
 // 重定向到home
-router.redirect('/','/home')
+//router.redirect('/','/home')
 
 module.exports = router; // 导出router给app.js使用

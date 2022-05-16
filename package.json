@@ -11,12 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "child_process": "^1.0.2",
     "jsonwebtoken": "^8.5.1",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.1.1",
     "koa2": "^2.0.0-alpha.7",
     "muse-ui": "^3.0.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "koa-static": "^5.0.0",

@@ -1,0 +1,295 @@
+<HTML>
+<HEAD><TITLE>BLAST Search Results</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#660099" ALINK="#660099">
+<PRE>
+
+<b>BLASTP 2.10.0+</b>
+
+
+<b><a
+href="https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=R
+etrieve&list_uids=9254694&dopt=Citation">Reference</a>:</b>
+Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&auml;ffer,
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997),
+"Gapped BLAST and PSI-BLAST: a new generation of protein database
+search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+<b><a
+href="https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=R
+etrieve&list_uids=11452024&dopt=Citation">Reference for
+composition-based statistics</a>:</b>
+Alejandro A. Sch&auml;ffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: /home/s202128016715004/blast/dbnew.fasta
+           60 sequences; 29,590 total letters
+
+
+
+<b>Query=</b> 
+Length=310
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+<a title="Show report for Q60722" href="https://www.ncbi.nlm.nih.gov/protein/Q60722?report=genbank&log$=prottop&blast_rank=1&RID=" >Q60722 </a>Transcription factor 4 OS=Mus musculus OX=10090 GN=Tcf4 PE...  <a href=#Q60722>631</a>        0.0  
+<a title="Show report for P15884" href="https://www.ncbi.nlm.nih.gov/protein/P15884?report=genbank&log$=prottop&blast_rank=2&RID=" >P15884 </a>Transcription factor 4 OS=Homo sapiens OX=9606 GN=TCF4 PE=...  <a href=#P15884>609</a>        0.0  
+<a title="Show report for P15923" href="https://www.ncbi.nlm.nih.gov/protein/P15923?report=genbank&log$=prottop&blast_rank=3&RID=" >P15923 </a>Transcription factor E2-alpha OS=Homo sapiens OX=9606 GN=T...  <a href=#P15923>281</a>        9e-93
+<a title="Show report for P15806" href="https://www.ncbi.nlm.nih.gov/protein/P15806?report=genbank&log$=prottop&blast_rank=4&RID=" >P15806 </a>Transcription factor E2-alpha OS=Mus musculus OX=10090 GN=...  <a href=#P15806>273</a>        8e-90
+<a title="Show report for Q15672" href="https://www.ncbi.nlm.nih.gov/protein/Q15672?report=genbank&log$=prottop&blast_rank=5&RID=" >Q15672 </a>Twist-related protein 1 OS=Homo sapiens OX=9606 GN=TWIST1 ...  <a href=#Q15672>36.6</a>       2e-05
+<a title="Show report for P26687" href="https://www.ncbi.nlm.nih.gov/protein/P26687?report=genbank&log$=prottop&blast_rank=6&RID=" >P26687 </a>Twist-related protein 1 OS=Mus musculus OX=10090 GN=Twist1...  <a href=#P26687>36.6</a>       2e-05
+<a title="Show report for Q61039" href="https://www.ncbi.nlm.nih.gov/protein/Q61039?report=genbank&log$=prottop&blast_rank=7&RID=" >Q61039 </a>Heart- and neural crest derivatives-expressed protein 2 OS...  <a href=#Q61039>30.0</a>       0.003
+<a title="Show report for Q08874" href="https://www.ncbi.nlm.nih.gov/protein/Q08874?report=genbank&log$=prottop&blast_rank=8&RID=" >Q08874 </a>Microphthalmia-associated transcription factor OS=Mus musc...  <a href=#Q08874>27.3</a>       0.035
+<a title="Show report for Q9NQB0" href="https://www.ncbi.nlm.nih.gov/protein/Q9NQB0?report=genbank&log$=prottop&blast_rank=9&RID=" >Q9NQB0 </a>Transcription factor 7-like 2 OS=Homo sapiens OX=9606 GN=T...  <a href=#Q9NQB0>26.9</a>       0.051
+<a title="Show report for Q04888" href="https://www.ncbi.nlm.nih.gov/protein/Q04888?report=genbank&log$=prottop&blast_rank=10&RID=" >Q04888 </a>Transcription factor SOX-10 OS=Mus musculus OX=10090 GN=So...  <a href=#Q04888>26.2</a>       0.082
+
+
+><a title="Show report for Q60722" href="https://www.ncbi.nlm.nih.gov/protein/Q60722?report=genbank&log$=protalign&blast_rank=1&RID=0" >Q60722</a><a name=Q60722></a> Transcription factor 4 OS=Mus musculus OX=10090 GN=Tcf4 PE=1 
+SV=1
+Length=670
+
+ Score = 631 bits (1627),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 310/310 (100%), Positives = 310/310 (100%), Gaps = 0/310 (0%)
+
+Query  1    WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAVPGGHGDMHGI  60
+            WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAVPGGHGDMHGI
+Sbjct  361  WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAVPGGHGDMHGI  420
+
+Query  61   MGPSHNGAMGSLGSGYGTSLLSANRHSLMVGAHREDGVALRGSHSLLPNQVPVPQLPVQS  120
+            MGPSHNGAMGSLGSGYGTSLLSANRHSLMVGAHREDGVALRGSHSLLPNQVPVPQLPVQS
+Sbjct  421  MGPSHNGAMGSLGSGYGTSLLSANRHSLMVGAHREDGVALRGSHSLLPNQVPVPQLPVQS  480
+
+Query  121  ATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKDI  180
+            ATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKDI
+Sbjct  481  ATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKDI  540
+
+Query  181  KSITRSRSSNNDDEDLTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKS  240
+            KSITRSRSSNNDDEDLTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKS
+Sbjct  541  KSITRSRSSNNDDEDLTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKS  600
+
+Query  241  DKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSSEPPPLSLAGPHPGM  300
+            DKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSSEPPPLSLAGPHPGM
+Sbjct  601  DKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSSEPPPLSLAGPHPGM  660
+
+Query  301  GDAANHMGQM  310
+            GDAANHMGQM
+Sbjct  661  GDAANHMGQM  670
+
+
+><a title="Show report for P15884" href="https://www.ncbi.nlm.nih.gov/protein/P15884?report=genbank&log$=protalign&blast_rank=2&RID=0" >P15884</a><a name=P15884></a> Transcription factor 4 OS=Homo sapiens OX=9606 GN=TCF4 PE=1 SV=3
+Length=667
+
+ Score = 609 bits (1571),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 300/310 (97%), Positives = 303/310 (98%), Gaps = 4/310 (1%)
+
+Query  1    WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAVPGGHGDMHGI  60
+            WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTA+PGGHGDMHGI
+Sbjct  362  WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAMPGGHGDMHGI  421
+
+Query  61   MGPSHNGAMGSLGSGYGTSLLSANRHSLMVGAHREDGVALRGSHSLLPNQVPVPQLPVQS  120
+            +GPSHNGAMG LGSGYGT LLSANRHSLMVG HREDGVALRGSHSLLPNQVPVPQLPVQS
+Sbjct  422  IGPSHNGAMGGLGSGYGTGLLSANRHSLMVGTHREDGVALRGSHSLLPNQVPVPQLPVQS  481
+
+Query  121  ATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKDI  180
+            ATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKDI
+Sbjct  482  ATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKDI  541
+
+Query  181  KSITRSRSSNNDDEDLTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKS  240
+            KSIT    SNNDDEDLTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKS
+Sbjct  542  KSIT----SNNDDEDLTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKS  597
+
+Query  241  DKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSSEPPPLSLAGPHPGM  300
+            DKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSSEPPPLSLAGPHPGM
+Sbjct  598  DKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSSEPPPLSLAGPHPGM  657
+
+Query  301  GDAANHMGQM  310
+            GDA+NHMGQM
+Sbjct  658  GDASNHMGQM  667
+
+
+><a title="Show report for P15923" href="https://www.ncbi.nlm.nih.gov/protein/P15923?report=genbank&log$=protalign&blast_rank=3&RID=0" >P15923</a><a name=P15923></a> Transcription factor E2-alpha OS=Homo sapiens OX=9606 GN=TCF3 
+PE=1 SV=1
+Length=654
+
+ Score = 281 bits (719),  Expect = 9e-93, Method: Compositional matrix adjust.
+ Identities = 174/315 (55%), Positives = 219/315 (70%), Gaps = 34/315 (11%)
+
+Query  1    WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAVPGGHGDMHGI  60
+            W R G   + SP+Y+G LH LQS+IED L   D+AIHVLR+HAVG +       GDMH +
+Sbjct  369  WPRAGAPGALSPSYDGGLHGLQSKIEDHL---DEAIHVLRSHAVGTA-------GDMHTL  418
+
+Query  61   MGPSHNGAMGSLGSGYGTSLLSANRHSLMVG-AHREDGVALRGSHSLLPNQVPVPQLPVQ  119
+            + P H    G+L SG+   +    RH+ +VG +H EDG+A  GS SL+ N      LP Q
+Sbjct  419  L-PGH----GALASGFTGPMSLGGRHAGLVGGSHPEDGLA--GSTSLMHNHA---ALPSQ  468
+
+Query  120  SATSPDLNPPQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKKD  179
+              T PDL+ P D Y G+  G  G + ++  SEIK +++ DE   +  S+ D   +++KK+
+Sbjct  469  PGTLPDLSRPPDSYSGL--GRAGATAAA--SEIKREEKEDE---ENTSAADHS-EEEKKE  520
+
+Query  180  IKSITRSRSSNNDDED--LTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLH  237
+            +K+  R+R+S ++DED  L PEQKAEREKERR+ANNARERLRVRDINEAFKELGRM QLH
+Sbjct  521  LKA-PRARTSPDEDEDDLLPPEQKAEREKERRVANNARERLRVRDINEAFKELGRMCQLH  579
+
+Query  238  LKSDKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSS--EPPPLSLAG  295
+            L S+KPQTKLLILHQAV+VIL+LEQQVRERNLNPKAACLKRREEEKVS     P + L+ 
+Sbjct  580  LNSEKPQTKLLILHQAVSVILNLEQQVRERNLNPKAACLKRREEEKVSGVVGDPQMVLSA  639
+
+Query  296  PHPGMGDAANHMGQM  310
+            PHPG+ +A N  G M
+Sbjct  640  PHPGLSEAHNPAGHM  654
+
+
+><a title="Show report for P15806" href="https://www.ncbi.nlm.nih.gov/protein/P15806?report=genbank&log$=protalign&blast_rank=4&RID=0" >P15806</a><a name=P15806></a> Transcription factor E2-alpha OS=Mus musculus OX=10090 GN=Tcf3 
+PE=1 SV=2
+Length=651
+
+ Score = 273 bits (699),  Expect = 8e-90, Method: Compositional matrix adjust.
+ Identities = 171/316 (54%), Positives = 217/316 (69%), Gaps = 37/316 (12%)
+
+Query  1    WSRNGGQASSSPNYEGPLHSLQSRIEDRLERLDDAIHVLRNHAVGPSTAVPGGHGDMHGI  60
+            W R G  ++ SPNY+  LH L S++EDRL   D+AIHVLR+HAVG ++       D+HG+
+Sbjct  367  WPRAGAPSALSPNYDAGLHGL-SKMEDRL---DEAIHVLRSHAVGTAS-------DLHGL  415
+
+Query  61   MGPSHNGAMGSLGSGYGTSLLSANRHSLMVG-AHREDGVALRGSHSLLPNQVPVPQLPVQ  119
+            + P H    G+L + +   +    RH+ +VG +H E+G  L    SLL N      LP Q
+Sbjct  416  L-PGH----GALTTSFTGPMSLGGRHAGLVGGSHPEEG--LTSGASLLHNHA---SLPSQ  465
+
+Query  120  SATSPDLNP-PQDPYRGMPPGLQGQSVSSGSSEIKSDDEGDENLQDTKSSEDKKLDDDKK  178
+             ++ PDL+  P D Y G+  G  G   ++G+SEIK +++ DE +     +E+     DKK
+Sbjct  466  PSSLPDLSQRPPDSYSGL--GRAG--TTAGASEIKREEKEDEEIASVADAEE-----DKK  516
+
+Query  179  DIKSITRSRSSNNDDED--LTPEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQL  236
+            D+K + R+R+S ++DED  L PEQKAEREKERR+ANNARERLRVRDINEAFKELGRM QL
+Sbjct  517  DLK-VPRTRTSPDEDEDDLLPPEQKAEREKERRVANNARERLRVRDINEAFKELGRMCQL  575
+
+Query  237  HLKSDKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSS--EPPPLSLA  294
+            HL S+KPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVS     P L+L+
+Sbjct  576  HLSSEKPQTKLLILHQAVAVILSLEQQVRERNLNPKAACLKRREEEKVSGVVGDPQLALS  635
+
+Query  295  GPHPGMGDAANHMGQM  310
+              HPG+G+A N  G +
+Sbjct  636  AAHPGLGEAHNPAGHL  651
+
+
+><a title="Show report for Q15672" href="https://www.ncbi.nlm.nih.gov/protein/Q15672?report=genbank&log$=protalign&blast_rank=5&RID=0" >Q15672</a><a name=Q15672></a> Twist-related protein 1 OS=Homo sapiens OX=9606 GN=TWIST1 PE=1 
+SV=1
+Length=202
+
+ Score = 36.6 bits (83),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 30/88 (34%), Positives = 45/88 (51%), Gaps = 3/88 (3%)
+
+Query  198  PEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKSDKPQTKLLILHQAVAVI  257
+            P+   E + +R MAN  RER R + +NEAF  L +++   L SDK  +K+  L  A   I
+Sbjct  100  PQSYEELQTQRVMAN-VRERQRTQSLNEAFAALRKIIPT-LPSDK-LSKIQTLKLAARYI  156
+
+Query  258  LSLEQQVRERNLNPKAACLKRREEEKVS  285
+              L Q ++   L+ K A       E++S
+Sbjct  157  DFLYQVLQSDELDSKMASCSYVAHERLS  184
+
+
+><a title="Show report for P26687" href="https://www.ncbi.nlm.nih.gov/protein/P26687?report=genbank&log$=protalign&blast_rank=6&RID=0" >P26687</a><a name=P26687></a> Twist-related protein 1 OS=Mus musculus OX=10090 GN=Twist1 PE=1 
+SV=1
+Length=206
+
+ Score = 36.6 bits (83),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 30/88 (34%), Positives = 45/88 (51%), Gaps = 3/88 (3%)
+
+Query  198  PEQKAEREKERRMANNARERLRVRDINEAFKELGRMVQLHLKSDKPQTKLLILHQAVAVI  257
+            P+   E + +R MAN  RER R + +NEAF  L +++   L SDK  +K+  L  A   I
+Sbjct  104  PQSYEELQTQRVMAN-VRERQRTQSLNEAFAALRKIIPT-LPSDK-LSKIQTLKLAARYI  160
+
+Query  258  LSLEQQVRERNLNPKAACLKRREEEKVS  285
+              L Q ++   L+ K A       E++S
+Sbjct  161  DFLYQVLQSDELDSKMASCSYVAHERLS  188
+
+
+><a title="Show report for Q61039" href="https://www.ncbi.nlm.nih.gov/protein/Q61039?report=genbank&log$=protalign&blast_rank=7&RID=0" >Q61039</a><a name=Q61039></a> Heart- and neural crest derivatives-expressed protein 2 OS=Mus 
+musculus OX=10090 GN=Hand2 PE=1 SV=3
+Length=217
+
+ Score = 30.0 bits (66),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 21/71 (30%), Positives = 35/71 (49%), Gaps = 1/71 (1%)
+
+Query  207  ERRMANNARERLRVRDINEAFKELGRMVQLHLKSDKPQTKLLILHQAVAVILSLEQQVRE  266
+            +RR   N +ER R + IN AF EL   +  ++ +D   +K+  L  A + I  L   + +
+Sbjct  99   KRRGTANRKERRRTQSINSAFAELRECIP-NVPADTKLSKIKTLRLATSYIAYLMDLLAK  157
+
+Query  267  RNLNPKAACLK  277
+             + N +A   K
+Sbjct  158  DDQNGEAEAFK  168
+
+
+><a title="Show report for Q08874" href="https://www.ncbi.nlm.nih.gov/protein/Q08874?report=genbank&log$=protalign&blast_rank=8&RID=0" >Q08874</a><a name=Q08874></a> Microphthalmia-associated transcription factor OS=Mus musculus 
+OX=10090 GN=Mitf PE=1 SV=4
+Length=526
+
+ Score = 27.3 bits (59),  Expect = 0.035, Method: Compositional matrix adjust.
+ Identities = 21/67 (31%), Positives = 36/67 (54%), Gaps = 1/67 (1%)
+
+Query  204  REKERRMANNARERLRVRDINEAFKELGRMVQLHLKSDKPQTKLLILHQAVAVILSLE-Q  262
+            +E++++  +N  ER R  +IN+  KELG ++      D    K  IL  +V  I  L+ +
+Sbjct  308  KERQKKDNHNLIERRRRFNINDRIKELGTLIPKSNDPDMRWNKGTILKASVDYIRKLQRE  367
+
+Query  263  QVRERNL  269
+            Q R ++L
+Sbjct  368  QQRAKDL  374
+
+
+><a title="Show report for Q9NQB0" href="https://www.ncbi.nlm.nih.gov/protein/Q9NQB0?report=genbank&log$=protalign&blast_rank=9&RID=0" >Q9NQB0</a><a name=Q9NQB0></a> Transcription factor 7-like 2 OS=Homo sapiens OX=9606 GN=TCF7L2 
+PE=1 SV=2
+Length=619
+
+ Score = 26.9 bits (58),  Expect = 0.051, Method: Compositional matrix adjust.
+ Identities = 22/74 (30%), Positives = 34/74 (46%), Gaps = 11/74 (15%)
+
+Query  152  IKSDDEGDENLQDTKSSEDKKLDDDKKDIKS--ITRSRSSNNDDED------LTPEQKAE  203
+            I   DEG+   Q+ KSSE+   + D  D+KS  +  S ++ N   D        P  ++ 
+Sbjct  19   ISFKDEGE---QEEKSSENSSAERDLADVKSSLVNESETNQNSSSDSEAERRPPPRSESF  75
+
+Query  204  REKERRMANNARER  217
+            R+K R     A +R
+Sbjct  76   RDKSRESLEEAAKR  89
+
+
+><a title="Show report for Q04888" href="https://www.ncbi.nlm.nih.gov/protein/Q04888?report=genbank&log$=protalign&blast_rank=10&RID=0" >Q04888</a><a name=Q04888></a> Transcription factor SOX-10 OS=Mus musculus OX=10090 GN=Sox10 
+PE=1 SV=2
+Length=466
+
+ Score = 26.2 bits (56),  Expect = 0.082, Method: Compositional matrix adjust.
+ Identities = 14/38 (37%), Positives = 21/38 (55%), Gaps = 2/38 (5%)
+
+Query  63   PSHNGAMGSLGSGYGTSLLSANRHSLMVGAHREDGVAL  100
+            P H G+  + G G G++L  A+ HS  +   +  GVAL
+Sbjct  307  PGHVGSYSAAGYGLGSALAVASGHSAWIS--KPPGVAL  342
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.129    0.366    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 6579720
+
+
+  Database: /home/s202128016715004/blast/dbnew.fasta
+    Posted date:  May 14, 2022  4:03 PM
+  Number of letters in database: 29,590
+  Number of sequences in database:  60
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
+</PRE>
+</BODY>
+</HTML>

@@ -3,7 +3,7 @@
  */
 const db = require('./db')
 const data = [
-    {id: 0, icon: '/images/subjectIcons1.png', title: "Java EE"},
+  //  {id: 0, Name: 'LOC110806262', Gene ID: "LOC110806262",Species:"Homo sapiens",Description:"solute carrier family 6 member 4 gene promoter [Homo sapiens (human)]",Location:"Chromosome 17, NC_000017.11 (30235481..30237521)",websiste},
     {id: 1, icon: '/images/subjectIcons2.png', title: "全栈UI设计"},
     {id: 2, icon: '/images/subjectIcons3.png', title: "H5前端"},
     {id: 3, icon: '/images/subjectIcons4.png', title: "Python"},
